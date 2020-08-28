@@ -392,8 +392,8 @@ else
 	user=' /home/local/RAGE/'"$optr"
     cd $user
 	echo -ne "Permission Changing"
-	chmod -R 777 projects/php/data/
-	chmod -R 777 projects/php/docker/vhosts
+	# chmod -R 777 projects/php/data/
+	# chmod -R 777 projects/php/docker/vhosts
 	chown -R $per''$optr:$domain projects/
 	echo -ne "\rPermission changing ... \033[1;32mDONE \033[m"
 	sleep 1;
@@ -428,7 +428,7 @@ else
 	sleep 1;
 	cd $user/projects/php/docker/
 #	./bin/start
-	echo  '\033[1;32mDocker Installed Sucessfully \033[m'
+	echo -ne '\033[1;32mDocker Installed Sucessfully \033[m'
 	
 fi
 fi
